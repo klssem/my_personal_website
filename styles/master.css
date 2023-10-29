@@ -6,6 +6,7 @@ body {
   background-color: rgb(190, 190, 190);
   background-attachment: fixed;
   background-position: center;
+  font-size: 1.2rem;
 }
 #bg_gradient {
   background-color: rgb(white, white, white);
@@ -42,17 +43,44 @@ nav a {
   font-size: 1.06em;
   color: black;
 }
-nav a:hover{
-    background-color: rgb(145, 125, 125);
-    color: white;
+nav a:hover {
+  background-color: rgb(145, 125, 125);
+  color: white;
 }
-nav a.active{
-    background-color: rgb(127, 144, 170);
-    color: white;
+nav a.active {
+  background-color: rgb(127, 144, 170);
+  color: white;
 }
-nav a:visited{
-    color:black;
+nav a:visited {
+  color: black;
 }
-header{
-    text-align: center;
+#gradient_header_flex {
+  position: block;
+  display: flex;
+
 }
+#gradient_header {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgb(255, 48, 48) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+header {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  /* position: fixed; */
+  /* background: linear-gradient(
+      0deg,
+      rgba(245, 244, 244, 0) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ); */
+}
+/* h1{
+  padding: 0%;
+  margin: 50%;
+} */
