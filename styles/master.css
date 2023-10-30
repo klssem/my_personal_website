@@ -7,14 +7,16 @@ body {
   background-attachment: fixed;
   background-position: center;
   font-size: 1.2rem;
+  color: #011F26;
+  line-height: 1.6em;
 }
 #bg_gradient {
   background-color: rgb(white, white, white);
   background: linear-gradient(
     0deg,
-    rgba(64, 48, 48, 0.8) 5%,
+    #f8a8bd 5%,
     rgba(255, 255, 255, 0) 58%,
-    rgba(255, 255, 255, 1) 89%
+    rgb(255, 255, 255) 78%
   );
   position: fixed;
   z-index: -1;
@@ -44,43 +46,69 @@ nav a {
   color: black;
 }
 nav a:hover {
-  background-color: rgb(145, 125, 125);
+  background-color: #F2668B;
   color: white;
 }
 nav a.active {
-  background-color: rgb(127, 144, 170);
-  color: white;
+  background-color: #03A688;
+  color: #011F26;
 }
 nav a:visited {
-  color: black;
-}
-#gradient_header_flex {
-  position: block;
-  display: flex;
-
-}
-#gradient_header {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(
-    circle,
-    rgb(255, 48, 48) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
+  color: #011F26;
 }
 header {
   text-align: center;
-  width: fit-content;
-  margin: auto;
-  /* position: fixed; */
-  /* background: linear-gradient(
-      0deg,
-      rgba(245, 244, 244, 0) 0%,
-      rgba(255, 255, 255, 0.8) 50%,
-      rgba(255, 255, 255, 0) 100%
-    ); */
+  width: 100%;
+  padding: 0px 0px 2px 0;
+  margin: 10px auto 40px auto;
+  /* background-color: white; */
 }
-/* h1{
-  padding: 0%;
-  margin: 50%;
-} */
+h1{
+  padding: 0;
+  margin: 0;
+}
+.main-content{
+  min-height: 100vh;
+}
+.main-content{
+  background-color: white;
+  margin: 40px 10%;
+  padding: 0px;
+  box-shadow: 5px 5px 10px rgb(38, 32, 32);
+  border: 1px solid rgb(162, 138, 138);
+  border-radius: 10px;
+}
+.cards{
+  padding: 5px 5% 5px 5%;
+  margin: 30px 5% 30px 5%;
+  border: 2px solid rgb(216, 216, 213);
+  border-radius: 10px;
+}
+
+.contactMe{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(38, 32, 32);
+}
+
+button{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #03A688;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+footer{
+  width: 100%;
+  background-color: white;
+  margin-top: auto;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 10px;
+}
+footer a{
+  color:#03A688;
+  text-decoration: none;
+}
