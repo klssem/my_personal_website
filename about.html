@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/master.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/master.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/contactMe.css" />
+    <script src="scripts/contactMe.js"></script>
     <title>About Me - Kelssem Quintal</title>
   </head>
   <body>
     <div id="bg_gradient"></div>
     <nav>
       <a href="portfolio.html">Portfolio</a>
-      <a class="active" href="about.html">Ahout</a>
+      <a class="active" href="about.html">About</a>
       <a href="index.html">Home</a>
     </nav>
     <header><h1>About Me - Kelssem Quintal</h1></header>
@@ -20,55 +22,55 @@
       <p>
         From hobby coder to educator, and now a fully dedicated web developer—my
         journey through the realms of technology and digital creation has been
-        both fascinating and profoundly enriching. Through each phase, my passion
-        for web development and continuous learning has been the steadfast force
-        propelling me forward.
+        both fascinating and profoundly enriching. Through each phase, my
+        passion for web development and continuous learning has been the
+        steadfast force propelling me forward.
       </p>
     </div>
-    <div class="main-content">
+    <div class="main_content">
       <div class="cards">
         <h3>My Journey</h3>
-
       </div>
       <div class="cards">
         <p>
-          2015: A Spark Ignites My journey began in 2015 when curiosity led me to
-          explore coding as a hobby. The fascinating world of loops, logic, and
-          languages captivated my mind, setting the stage for a deep and enduring
-          interest in web development.
+          <strong>2015:</strong> A Spark Ignites My journey began in 2015 when curiosity led me
+          to explore coding as a hobby. The fascinating world of loops, logic,
+          and languages captivated my mind, setting the stage for a deep and
+          enduring interest in web development.
         </p>
       </div>
       <div class="cards">
         <p>
-          2018: The Educator Emerges In 2018, life unveiled a new role for me: a
-          teacher. Entrusted with the minds of high school students, I embarked on a
-          rewarding journey teaching the fundamentals of HTML, CSS, JavaScript, and
-          Java. Sharing knowledge and inspiring young minds became the highlights of
-          my everyday life.
+          <strong>2018:</strong> The Educator Emerges In 2018, life unveiled a new role for me: a
+          teacher. Entrusted with the minds of high school students, I embarked
+          on a rewarding journey teaching the fundamentals of HTML, CSS,
+          JavaScript, and Java. Sharing knowledge and inspiring young minds
+          became the highlights of my everyday life.
         </p>
       </div>
       <div class="cards">
         <p>
-          2023: Leaping Further A pivotal leap came in 2023 when I joined Fullstack
-          Academy. This intensive coding bootcamp was a transformative experience,
-          fine-tuning my skills and sharpening my expertise.
+          <strong>2023:</strong> Leaping Further A pivotal leap came in 2023 when I joined
+          Fullstack Academy. This intensive coding bootcamp was a transformative
+          experience, fine-tuning my skills and sharpening my expertise.
         </p>
       </div>
       <div class="cards">
         <p>
-          2024: A New Chapter at Full Sail University In a continued quest for
-          knowledge, I commenced my bachelor's journey at Full Sail University in
-          2024. This new chapter is marked with fresh learnings, challenges, and the
-          ever-present thirst for mastering the nuances of web development.
+          <strong>2024:</strong> A New Chapter at Full Sail University In a continued quest for
+          knowledge, I commenced my bachelor's journey at Full Sail University
+          in 2024. This new chapter is marked with fresh learnings, challenges,
+          and the ever-present thirst for mastering the nuances of web
+          development.
         </p>
       </div>
       <div class="cards">
         <h3>Philosophy</h3>
         <p>
           "Knowledge is Power." Guided by this philosophy, I navigate the world,
-          embracing each opportunity to learn, grow, and evolve. A forever learner
-          at heart, I believe in the transformative power of knowledge to overcome
-          challenges, drive innovation, and enrich lives.
+          embracing each opportunity to learn, grow, and evolve. A forever
+          learner at heart, I believe in the transformative power of knowledge
+          to overcome challenges, drive innovation, and enrich lives.
         </p>
       </div>
     </div>
@@ -77,14 +79,60 @@
       <h3>Let's Connect and Create!</h3>
       <p>
         In the confluence of passion and knowledge, great ideas are born. Let's
-        connect, share ideas, and create something extraordinary and impactful in
-        the digital world!In the confluence of passion and knowledge, great ideas
-        are born. Let's connect, share ideas, and create something extraordinary
-        and impactful in the digital world!
+        connect, share ideas, and create something extraordinary and impactful
+        in the digital world!In the confluence of passion and knowledge, great
+        ideas are born. Let's connect, share ideas, and create something
+        extraordinary and impactful in the digital world!
       </p>
-      <button>Contact Me</button>
+      <button onclick="openContactMe()">Contact Me</button>
     </div>
-
+    <!-- Contact Me Form -->
+    <!-- Form parent container -->
+    <div class="form_popup cards" id="myContactForm">
+      <!-- The contact me form -->
+      <form action="contactMe.html" class="form_container">
+        <h1>Send Me a Message</h1>
+        <label for="fname"><strong>First Name: </strong></label>
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          name="fname"
+          required
+        />
+        <br />
+        <label for="lname"><strong>Last Name: </strong></label>
+        <input
+          type="text"
+          placeholder="Enter your last name"
+          name="lname"
+          required
+        />
+        <br />
+        <label for="email"><strong>Email: </strong></label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          name="email"
+          required
+        />
+        <br />
+        <label for="message"><strong>Message:</strong></label>
+        <br />
+        <textarea
+          name="message"
+          id="input_message"
+          cols="30"
+          rows="5"
+          placeholder="Enter a message"
+        ></textarea>
+        <br />
+        <button class="btn_form" type="submit">Submit</button>
+        <button class="btn_form cancel" onclick="closeContactMe()">
+          Cancel
+        </button>
+      </form>
+    </div>
+    <!-- End | Contact me form -->
     <footer>
       <a href="https://www.linkedin.com/in/kelssem-quintal/"></a>LinkedIn
     </footer>

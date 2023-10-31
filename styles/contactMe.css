@@ -1,0 +1,66 @@
+.main_content {
+    margin-top: 40px;
+    min-height: 710px;
+  }
+
+/* Parent Pop up Div */
+#myContactForm{
+    display: none;
+}
+.form_popup{
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(38, 32, 32);
+    position: fixed;
+    bottom: 150px;
+    left: 50px;
+    z-index: 9;
+    font-size: 1.4rem;
+}
+.form_container{
+    min-width: 350px;
+    padding: 20px;
+}
+
+.form_container h1{
+    margin-bottom: 20px;
+}
+
+.form_container input[type=text], input[type=email]{
+    background: hsl(305, 100%, 98%);
+    padding: 3px;
+    border-radius: 4px;
+    margin: 10px 0 0 10px;
+    border: 1px solid black;
+    font-size: 1.3rem;
+}
+
+.form_container input[type=text]:focus, input[type=email]:focus{
+    background-color: #bfebe2;
+    outline: none;
+}
+
+#input_message{
+    margin: 0;
+    width: 100%;
+    background: hsl(305, 100%, 98%);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+#input_message:focus{
+    background-color: #bfebe2;
+    outline: none;
+
+}
+
+.btn_form{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cancel{
+    margin-left: 80px;
+    background-color: hsl(305, 51%, 85%);
+    color: rgb(130, 153, 133);
+}
