@@ -21,7 +21,7 @@
     width: calc(125px * 2);
     height: calc(125px * 2);
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     margin: calc(195px * 2) 0 0 calc(565px * 2);
   }
 
@@ -53,7 +53,7 @@
     border-bottom-left-radius: 90%;
     height: calc(150px * 2);
     width: calc(150px * 2);
-    position: fixed;
+    position: absolute;
     margin: calc(140px * 2) 0px 0 calc(105px * 2);
     z-index: 4;
     rotate: 100deg;
@@ -64,7 +64,7 @@
     border-bottom-left-radius: 90%;
     height: calc(150px * 2);
     width: calc(150px * 2);
-    position: fixed;
+    position: absolute;
     margin: calc(100px * 2) 0px 0 calc(55px * 2);
     z-index: 4;
     rotate: 150deg;
@@ -76,7 +76,7 @@
     border-bottom-left-radius: 90%;
     height: calc(25px * 2);
     width: calc(25px * 2);
-    position: fixed;
+    position: absolute;
     margin: calc(0px * 2) 0 0 calc(0px * 2);
     z-index: 2;
     rotate: 90deg;
@@ -87,14 +87,14 @@
     border-bottom-left-radius: 90%;
     height: calc(25px * 2);
     width: calc(25px * 2);
-    position: fixed;
+    position: absolute;
     margin: 0 0 0 calc(18px * 2);
     z-index: 2;
     rotate: 90deg;
   }
   #bird {
     margin: calc(245px * 2) 0 0 calc(530px * 2);
-    position: fixed;
+    position: absolute;
   }
 
   #trunk {
@@ -103,7 +103,7 @@
     border-bottom-left-radius: 10%;
     height: calc(200px * 2);
     width: calc(100px * 2);
-    position: fixed;
+    position: absolute;
     margin: calc(120px * 2) 0px 0 calc(100px * 2);
     z-index: 3;
     rotate: 20deg;
@@ -111,7 +111,7 @@
 
   #beach {
     background-color: rgb(142, 110, 72);
-    position: fixed;
+    position: absolute;
     height: calc(150px * 2);
     width: calc(300px * 2);
     border-top-right-radius: 100%;
