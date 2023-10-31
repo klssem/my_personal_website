@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/master.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/contactMe.css" />
+    <script src="scripts/contactMe.js"></script>
     <title>Kelssem's Homepage</title>
   </head>
   <body>
     <nav>
       <a href="portfolio.html">Portfolio</a>
-      <a href="about.html">Ahout</a>
+      <a href="about.html">About</a>
       <a class="active" href="index.html">Home</a>
     </nav>
     <!-- backgorund gradient -->
@@ -22,7 +24,8 @@
       <p>Web Developer | SEO Expert | Front-end Developer</p>
     </header>
     <!-- Welcome Div and Image -->
-    <div class="topDiv-flex">
+    <div class="topDiv_flex">
+      <!-- index.css -->
       <div class="topText">
         <h2>Welcome!</h2>
         <p>
@@ -46,7 +49,7 @@
     <!-- End of welcome Div -->
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="main_content">
       <div class="cards">
         <h3>What I Do</h3>
         <ul>
@@ -75,20 +78,67 @@
           streamlined websites to SEO-optimized platforms, each piece speaks
           volumes of my expertise and commitment.
         </p>
-        <button>View Portfolio</button>
+        <button onclick="window.location.href='portfolio.html'">
+          View Portfolio
+        </button>
       </div>
-
     </div>
     <div class="cards contactMe">
       <h3>Let's Connect</h3>
       <p>
         Open to collaborative explorations, new challenges, and fresh
-        opportunities. If you have any projects in mind or queries regarding
-        my work, or if you’d like to share a hello, feel free to reach out.
+        opportunities. If you have any projects in mind or queries regarding my
+        work, or if you’d like to share a hello, feel free to reach out.
       </p>
-      <button>Contact Me</button>
+      <button onclick="openContactMe()">Contact Me</button>
     </div>
-    
+    <!-- Contact Me Form -->
+    <!-- Form parent container -->
+    <div class="form_popup cards" id="myContactForm">
+      <!-- The contact me form -->
+      <form action="contactMe.html" class="form_container">
+        <h1>Send Me a Message</h1>
+        <label for="fname"><strong>First Name: </strong></label>
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          name="fname"
+          required
+        />
+        <br />
+        <label for="lname"><strong>Last Name: </strong></label>
+        <input
+          type="text"
+          placeholder="Enter your last name"
+          name="lname"
+          required
+        />
+        <br />
+        <label for="email"><strong>Email: </strong></label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          name="email"
+          required
+        />
+        <br />
+        <label for="message"><strong>Message:</strong></label>
+        <br />
+        <textarea
+          name="message"
+          id="input_message"
+          cols="30"
+          rows="5"
+          placeholder="Enter a message"
+        ></textarea>
+        <br />
+        <button class="btn_form" type="submit">Submit</button>
+        <button class="btn_form cancel" onclick="closeContactMe()">
+          Cancel
+        </button>
+      </form>
+    </div>
+    <!-- End | Contact me form -->
     <footer>
       <a href="https://www.linkedin.com/in/kelssem-quintal/">LinkedIn</a>
     </footer>

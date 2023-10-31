@@ -9,7 +9,14 @@ body {
   font-size: 1.2rem;
   color: #011F26;
   line-height: 1.6em;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+
 #bg_gradient {
   background-color: rgb(white, white, white);
   background: linear-gradient(
@@ -45,16 +52,16 @@ nav a {
   font-size: 1.06em;
   color: black;
 }
-nav a:hover {
-  background-color: #F2668B;
-  color: white;
-}
 nav a.active {
   background-color: #03A688;
   color: #011F26;
 }
 nav a:visited {
-  color: #011F26;
+  color: inherit;
+}
+nav a:hover {
+  color: rgb(255, 255, 255);
+  background-color: #F2668B;
 }
 header {
   text-align: center;
@@ -67,10 +74,8 @@ h1{
   padding: 0;
   margin: 0;
 }
-.main-content{
-  min-height: 100vh;
-}
-.main-content{
+
+.main_content{
   background-color: white;
   margin: 40px 10%;
   padding: 0px;
@@ -100,15 +105,23 @@ button{
   font-weight: bold;
   font-size: 0.9em;
 }
+button:hover{
+  opacity: 0.6;
+}
 footer{
   width: 100%;
   background-color: white;
   margin-top: auto;
-  height: 2.5rem;
+  height: 3rem;
   text-align: center;
   padding-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 footer a{
   color:#03A688;
   text-decoration: none;
+}
+.spacer {
+  height: 2vh;
 }
