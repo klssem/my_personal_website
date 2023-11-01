@@ -1,7 +1,7 @@
 .topDiv_flex {
   display: flex;
   margin: 0 auto;
-  width: 600px;
+  width: 80%;
   /* height: 400px; */
   background-color: rgba(255,255,255,0.9);
   padding-right: 10px;
