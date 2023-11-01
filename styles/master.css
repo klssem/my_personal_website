@@ -122,6 +122,9 @@ footer a{
   color:#03A688;
   text-decoration: none;
 }
+footer img{
+  height: 28px;
+}
 .spacer {
   height: 2vh;
 }
