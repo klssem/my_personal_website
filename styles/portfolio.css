@@ -36,7 +36,11 @@
   box-shadow: 5px 5px 10px rgb(38, 32, 32);
 
 }
-.grid_item:hover {
+.grid_item div{
+  background-color: #f2668b;
+  border-radius: 5px;
+}
+.grid_item div:hover {
   position: fixed;
   width: 40%;
   top: 56%;
@@ -53,7 +57,7 @@
   color: #ffffff;
   font-weight: bolder;
 }
-.grid_item:hover p {
+.grid_item div:hover p {
   display: block;
 }
 
