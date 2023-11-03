@@ -9,8 +9,7 @@
   text-align: center;
   margin: 0 auto;
   width: 65%;
-  /* height: 400px; */
-  background-color: var(--shadowPrimary);
+  background-color: var(--bgColorTertiary);
   padding: 20px;
   border-radius: 50px;
 }
