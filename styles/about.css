@@ -4,8 +4,7 @@
 #topDiv{
     margin: 0 auto;
     width: 70%;
-    /* height: 400px; */
-    background-color: rgba(255,255,255,0.9);
+    background-color: var(--bgColorTertiary);
     padding: 20px;
     border-radius: 50px;
     text-align: center;

@@ -1,0 +1,21 @@
+:root {
+    --primaryColor: #B4C4D9;
+    --bgPrimaryColor: rgba(175, 175, 239, 0.3);
+    --secondaryColor: #F25E3D;
+    --bgSecondaryColor: rgb(247, 191, 154, 0.3);
+    --tertiaryColor: #F2B66D;
+    --fontColor: #590202;
+    --fontColor2: white;
+    --color4: #BFB749;
+    --borderColor: #590202;
+    --bgColor: white;
+    --bgGradient: linear-gradient(
+        0deg,
+        /* #f8a8bd 5%, */
+        #a8d8f8 15%,
+        rgba(255, 255, 255, 0) 58%,
+        rgb(255, 255, 255) 78%
+      );
+    --bgColorTertiary: rgba(255, 255, 255, 0.9);
+    --shadowPrimary: 5px 5px 10px rgb(38, 32, 32);
+}
