@@ -3,11 +3,11 @@ body {
   background-image: url("../images/body_bg_2.webp");
   background-repeat: no-repeat;
   background-size: 120%;
-  background-color: rgb(190, 190, 190);
+  /* background-color: rgb(190, 190, 190); */
   background-attachment: fixed;
   background-position: center;
   font-size: 1.2rem;
-  color: #011F26;
+  color: var(--fontColor);
   line-height: 1.6em;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
@@ -16,14 +16,7 @@ body::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 #bg_gradient {
-  background-color: rgb(white, white, white);
-  background: linear-gradient(
-    0deg,
-    /* #f8a8bd 5%, */
-    #a8d8f8 15%,
-    rgba(255, 255, 255, 0) 58%,
-    rgb(255, 255, 255) 78%
-  );
+  background: var(--bgGradient);
   position: fixed;
   z-index: -1;
   width: 100%;
@@ -33,34 +26,31 @@ body::-webkit-scrollbar {
   top: 0;
 }
 nav {
-  background-color: rgb(255, 255, 255);
-  /* border-bottom: 2px solid rgb(222, 222, 222); */
+  background-color: var(--bgColor);
   overflow: hidden;
-  /* width: 100%; */
-  /* text-align: right; */
-  /* padding: 2% 0% 2% 0% ; */
 }
 nav a {
   float: right;
   text-align: center;
   margin-left: 2%;
-  background-color: rgb(237, 240, 240);
+  background-color: var(--primaryColor);
   padding: 3% 2% 2.5% 2%;
   width: 70px;
   text-decoration: none;
   font-size: 1.06em;
-  color: black;
+  color: var(--fontColor);
+  border-radius:  3px;
 }
 nav a.active {
-  background-color: #03A688;
-  color: #011F26;
+  background-color: var(--secondaryColor);
+  color: var(--fontColor);
 }
 nav a:visited {
   color: inherit;
 }
 nav a:hover {
-  color: rgb(255, 255, 255);
-  background-color: #F2668B;
+  color: var(--fontColor2);
+  background-color: var(--tertiaryColor);
 }
 header {
   text-align: center;
@@ -75,32 +65,32 @@ h1{
 }
 
 .main_content{
-  background-color: white;
+  background-color: var(--bgColor);
   margin: 40px 10%;
   padding: 0px;
-  box-shadow: 5px 5px 10px rgb(38, 32, 32);
-  border: 1px solid rgb(162, 138, 138);
+  box-shadow: var(--shadowPrimary);
+  border: 1px solid var(--borderColor);
   border-radius: 10px;
 }
 .cards{
   padding: 5px 5% 5px 5%;
   margin: 30px 5% 30px 5%;
-  border: 2px solid rgb(216, 216, 213);
+  border: 2px solid var(--bgPrimaryColor);
   border-radius: 10px;
 }
 
 .contactMe{
-  background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px rgb(38, 32, 32);
+  background-color: var(--bgColor);
+  box-shadow: var(--shadowPrimary);
 }
 
 button{
   padding: 10px 20px;
   margin-bottom: 20px;
-  background-color: #03A688;
+  background-color: var(--primaryColor);
   border: none;
   border-radius: 50px;
-  color: white;
+  color: var(--fontColor2);
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -118,7 +108,6 @@ footer{
   font-weight: bold;
 }
 footer a{
-  color:#03A688;
   text-decoration: none;
 }
 footer img{

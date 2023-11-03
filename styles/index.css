@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--bgColorTertiary);
   border-bottom-left-radius: 200px;
   border-top-right-radius: 50%;
 }
